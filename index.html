@@ -2,10 +2,10 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <title>A-Frame</title>
     <!-- A-Frame ライブラリの読み込み -->
-    <script src="https://cdn.rawgit.com/aframevr/aframe/v0.5.0/dist/aframe-master.min.js"></script>
+    <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
     <!-- ammo.js ライブラリの読み込み。物理エンジン-->
     <script src="https://cdn.rawgit.com/kripken/ammo.js/dcab07bf0e7f2b4b64c01dc45da846344c8f50be/builds/ammo.js"></script>
     <!-- afraem-outline ライブラリの読み込み。-->
@@ -16,7 +16,7 @@
     <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 </head>
 <body style="margin: 0px; overflow:hidden;">
-    <a-scene embedded arjs="debugUIEnabled:false;">
+    <a-scene embedded arjs="debugUIEnabled:false;" vr-mode-ui="enabled: false">
         
     <a-marker preset="hiro">
     <a-entity mmd="audio:https://cdn.rawgit.com/mrdoob/three.js/dev/examples/models/mmd/audios/wavefile_short.mp3;
