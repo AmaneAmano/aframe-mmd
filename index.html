@@ -16,16 +16,16 @@
     <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 </head>
 <body style="margin: 0px; overflow:hidden;">
-    <a-scene embedded arjs="debugUIEnabled:false;" vr-mode-ui="enabled: false">
+    <a-scene embedded arjs="debugUIEnabled:false;" vr-mode-ui="enabled: false" antialias="true" outline>
         
     <a-marker preset="hiro">
     <a-entity mmd="audio:https://cdn.rawgit.com/mrdoob/three.js/dev/examples/models/mmd/audios/wavefile_short.mp3;
                      audioDelayTime:5.333333333333333; afterglow:2.0;">
-      <a-entity mmd-model="model:./mmd/alicia/MMD/Alicia_solid.pmx; vmd:https://cdn.rawgit.com/mrdoob/three.js/dev/examples/models/mmd/vmds/wavefile_v2.vmd;">
+      <a-entity mmd-model="model:./mmd/alicia/MMD/Alicia_solid.pmx; vmd:https://cdn.rawgit.com/mrdoob/three.js/dev/examples/models/mmd/vmds/wavefile_v2.vmd;" scale="0.05 0.05 0.05">
       </a-entity>
     </a-entity>
     </a-marker>
-        
+    
     <a-entity camera></a-entity>
     </a-scene>
 
