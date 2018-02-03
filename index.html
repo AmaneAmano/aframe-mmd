@@ -19,12 +19,15 @@
     <a-scene embedded arjs="debugUIEnabled:false;" vr-mode-ui="enabled: false" antialias="true" outline>
         
     <a-marker preset="hiro">
-    <a-entity mmd="audio:https://cdn.rawgit.com/mrdoob/three.js/dev/examples/models/mmd/audios/wavefile_short.mp3;
-                     audioDelayTime:5.333333333333333; afterglow:2.0;">
-      <a-entity mmd-model="model:https://cdn.rawgit.com/crimnut02/aframe-mmd/4419ef6d/mmd/shiro/MMD/siro_dance_wintercostume_white_v1.1.pmx;
-                           vmd:https://cdn.rawgit.com/mrdoob/three.js/dev/examples/models/mmd/vmds/wavefile_v2.vmd;"
-                scale="0.05 0.05 0.05"
-                position="0 0 0">
+    <a-entity mmd="audio:./audio/sukiyukimajimagic.m4a;
+                   autoplay:true;
+                   afterglow:2.0;">
+        <a-entity mmd-model="model:./mmd/shiro/siro_dance_wintercostume_white_v1.1.pmx;
+                             vmd:./motion/sukiyukimajimagic/sukiyukimajimagic_Tdaver.vmd;
+                             blink:true;"
+                  
+                  scale="0.05 0.05 0.05"
+                  position="0 0.1 0">
       </a-entity>
     </a-entity>
     </a-marker>
